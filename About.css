@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f8f6;
+  color: #0b2d52;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.logo img {
+  width: 65px;
+  height: 63px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 3px solid #2e9b45;
+}
+
+.navlink {
+  display: flex;
+  gap: 25px;
+}
+
+.navlink a {
+  text-decoration: none;
+  color: #123f7a;
+  font-weight: bold;
+}
+
+.navlink a:hover {
+  color: #2e9b45;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background-color: #0b2d52;
+  color: white;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 50px 60px;
+}
+
+.footer-section h2 {
+  color: #2e9b45;
+  margin-bottom: 15px;
+}
+
+.footer-section h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  color: #dce6ee;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-section a {
+  display: block;
+  color: #dce6ee;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-section a:hover {
+  color: #2e9b45;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: #123f7a;
+  padding: 15px;
+  border-top: 1px solid #2e9b45;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
+
+/* =========================
+   ABOUT US SECTION
+========================= */
+
+.about-section {
+  padding: 60px 80px;
+  background-color: #f5f8f6;
+}
+
+/* Main About Content */
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content h1 {
+  font-size: 45px;
+  color: #123f7a;
+  margin-bottom: 20px;
+}
+
+.about-content h1::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #2e9b45;
+  margin: 15px auto;
+  border-radius: 5px;
+}
+
+.about-content p {
+  color: #4d5d6c;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.about-content .intro {
+  font-size: 20px;
+  color: #123f7a;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   ABOUT CARDS
+========================= */
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.about-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  border-top: 4px solid #2e9b45;
+  box-shadow: 0 4px 12px rgba(11, 45, 82, 0.1);
+}
+
+.about-card h2 {
+  color: #123f7a;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.about-card p {
+  color: #5b6770;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* =========================
+   WHY NAIJAHOMES
+========================= */
+
+.why-us {
+  margin-top: 60px;
+  padding: 45px;
+  background-color: #123f7a;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.why-us > p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #dce6ee;
+  line-height: 1.7;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.features div {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.features h3 {
+  color: #2e9b45;
+  margin-bottom: 10px;
+}
+
+.features p {
+  color: #536271;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+  .about-section {
+    padding: 40px 30px;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 30px 20px;
+  }
+
+  .about-content h1 {
+    font-size: 35px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+  .why-us {
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 35px 25px;
+  }
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navlink {
+    gap: 12px;
+  }
+}

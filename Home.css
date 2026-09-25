@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #f5f8f6;
+  color: #0b2d52;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   APARTMENT GALLERY
+========================= */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  margin: 10px;
+  padding: 20px;
+  gap: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.Gallery {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.info {
+  font-size: 17px;
+  color: #123f7a;
+  font-weight: bold;
+}
+
+button {
+  background-color: #2e9b45;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #123f7a;
+}
+
+/* =========================
+   HOME / HERO SECTION
+========================= */
+
+#Home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #123f7a;
+}
+
+#cover img {
+  height: 740px;
+  width: 600px;
+  object-fit: cover;
+}
+
+#Hero {
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+}
+
+.front {
+  background-color: #123f7a;
+  margin: 10px;
+  padding: 20px;
+  gap: 10px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.logo img {
+  width: 65px;
+  height: 63px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-bottom: 3px solid #2e9b45;
+}
+
+.navlink {
+  display: flex;
+  gap: 25px;
+}
+
+.navlink a {
+  text-decoration: none;
+  color: #123f7a;
+  font-weight: bold;
+}
+
+.navlink a:hover {
+  color: #2e9b45;
+}
+
+/* =========================
+   PAGE HEADING
+========================= */
+
+h1 {
+  text-align: center;
+  color: #123f7a;
+  margin: 40px 0 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background-color: #0b2d52;
+  color: white;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 50px 60px;
+}
+
+.footer-section h2 {
+  color: #2e9b45;
+  margin-bottom: 15px;
+}
+
+.footer-section h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  color: #dce6ee;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-section a {
+  display: block;
+  color: #dce6ee;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-section a:hover {
+  color: #2e9b45;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: #123f7a;
+  padding: 15px;
+  border-top: 1px solid #2e9b45;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
